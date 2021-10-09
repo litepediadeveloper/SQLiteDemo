@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="SQLite Demo by Litepedia.com"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_marginStart="8dp"
+            android:id="@+id/btView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_marginStart="8dp"
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
